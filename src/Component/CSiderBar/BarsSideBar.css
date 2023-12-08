@@ -1,0 +1,58 @@
+.SiderbarShow {
+    /* display: block; */
+    position: absolute;
+    top: 4rem;
+    left: 0%;
+    background: #000000;
+    color: white;
+    height: 40rem;
+    overflow: scroll;
+    width: 15rem;
+    transform: translateX(-100%);
+    transition: all 0.7s ease-in-out;
+    padding-top: 2rem;
+    z-index: 1;
+}
+
+.SidebarHide{
+    /* display: none; */
+    transform: translateX(0%);
+    /* background-color: rgb(119, 119, 119); */
+
+}
+
+ul.ul-sidebar {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul.ul-sidebar:hover{
+    background-color: aliceblue;
+    color: #000000;
+    font-weight: 500;
+}
+
+.ul-main-sidebar:hover{
+    background-color: aliceblue;
+    color: #000000;
+    font-weight: 500;
+}
+
+.backdrop{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 4rem;
+    background-color: #000000;
+    display: none;
+    opacity: .5;
+
+}
+
+.backdrop-open{
+    height:1050%;
+    width: 100%;
+    display: block;
+}
